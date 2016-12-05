@@ -1,5 +1,9 @@
 # Inflatable Last.fm .NET SDK
+
+![Project logo](./res/if-lastfm-logo-300.png)
+
 [![Code licence](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat)](LICENCE.md) [![Build status](https://ci.appveyor.com/api/projects/status/c8gg2cw4jibbsg3u)](https://ci.appveyor.com/project/rikkit/lastfm) [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/inflatablefriends/lastfm?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 
 ## Project Goals
 
@@ -84,15 +88,45 @@ if (client.Auth.HasAuthenticated) {
 
 ## Platform Compatibility
 
+There are two packages of this library. If you need support for Windows Phone 7, or another .NET platform, it's probably easy enough. Raise an issue or send a PR.
+
+---
+
+###  .Net Standard 1.1
+
+Versions 1.0.x target ```netstandard1.1```. Development is on the ```master``` branch.
+
+#### Dependencies
+
+- Newtonsoft.Json 9.0.1 =<
+- System.Net.Http 4.3.0 =<
+
+#### Platforms
+
+Check [this table](https://docs.microsoft.com/en-us/dotnet/articles/standard/library#net-platforms-support) for supported platforms.
+
+---
+
+### PCL Profile 259
+
+Versions 0.3.x target ```portable-win8+net45+wp8+wpa81``` Development is on the ```profile259``` branch.
+
+#### Dependencies
+
+- Newtonsoft.Json 6.0.5 =<
+- Microsoft.Net.Http 2.2.8 =<
+
+#### Platforms
+
 The library is compatible with:
 
 - .NET 4.5 (including Mono)
-- Windows 8.0
-- Windows Phone 8.1
-- Windows Phone Silverlight 8
+- Windows 8.0 =<
+- Windows Phone 8.1 =<
+- Windows Phone Silverlight 8 =<
 - Xamarin.Android and Xamarin.iOS
 
-If you need support for Windows Phone 7, or another .NET platform, it's probably easy enough. Raise an issue or send a PR.
+---
 
 ## Credits
 
